@@ -5,6 +5,6 @@
     "name" : "gitopscluster",
     "namespace" : "prod"
   },
-  "asset_id" : "cloudfinearts-47f331349262cf676817768824979c1ccff94d0b",
+  "asset_id" : "cloudfinearts-73bbdb0b1d94d6cb68b9f15500363bd0a500afca",
   "aws_account" : "123456"
 }

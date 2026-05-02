@@ -9,9 +9,13 @@ spec:
         revision: HEAD  
         files:  
         - path: "configs/git-generator-files-discovery/cluster-config/**/config.json"  
-  template:  
-    metadata:  
-      name: '{{cluster.namespace}}-podinfo'  
+  template:
+    metadata:
+      name: '{{cluster.namespace}}-podinfo'
+      labels:
+        harness.io/serviceRef: podinfoservice
+        harness.io/envRef: '{{cluster.namespace}}'
+
     spec:  
       project: 3a0401a2  
       source:  
